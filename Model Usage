@@ -2,14 +2,51 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 4,
    "id": "86c91952-4aae-4c29-9fb0-5be65332965e",
    "metadata": {},
    "outputs": [],
    "source": [
     "from joblib import dump, load\n",
-    "dump(model,'Fairy.joblib')"
+    "import numpy as np\n",
+    "model=load('Fairy.joblib')\n",
+    "features=np.array([[-0.43942006,  3.12628155, -1.12165014, -0.27288841, -1.42262747,\n",
+    "       -0.23979304, -1.31238772,  2.61111401, -1.0016859 , -0.5778192 ,\n",
+    "       -0.97491834,  0.41164221, -0.86091034]])\n",
+    "model.predict(features)a"
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "401fd011-6832-4938-886c-9231102a0f7c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([22.4])"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "features=np.array([[-0.43942006,  3.12628155, -1.12165014, -0.27288841, -1.42262747,\n",
+    "       -0.23979304, -1.31238772,  2.61111401, -1.0016859 , -0.5778192 ,\n",
+    "       -0.97491834,  0.41164221, -0.86091034]])\n",
+    "model.predict(features)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ec0767b7-e6dc-4d54-b6c3-e4e40bbf439b",
+   "metadata": {},
+   "outputs": [],
+   "source": []
   }
  ],
  "metadata": {
